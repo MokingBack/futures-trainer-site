@@ -89,6 +89,14 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(246,245,241,.92);bac
 .hero-badges{display:flex;gap:22px;flex-wrap:wrap;margin-top:30px}
 .hero-badges div{font-size:13.5px;color:var(--ink-faint)}
 .hero-badges b{display:block;font-size:22px;color:var(--ink);font-family:"Noto Serif SC",serif;font-weight:700}
+/* manifesto */
+.manifesto{border-bottom:1px solid var(--line)}
+.manifesto .box{max-width:720px;margin:0 auto;text-align:center}
+.manifesto h2{font-size:30px;margin-bottom:10px}
+.manifesto .lead{margin-top:26px;text-align:left;color:var(--ink-soft);font-size:16.5px;line-height:2}
+.manifesto .lead p+p{margin-top:18px}
+.manifesto .sign{font-family:"Noto Serif SC","Songti SC","SimSun",serif;font-weight:700;color:var(--red);font-size:15px;letter-spacing:.08em;margin-top:36px}
+
 /* features */
 .features{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:48px}
@@ -137,7 +145,7 @@ details .ans{padding:0 24px 20px;color:var(--ink-soft);font-size:14.5px}
 .disclaimer .box h3{font-family:"Noto Sans SC",sans-serif;font-size:15px;margin-bottom:10px;color:var(--ink)}
 .final-cta{text-align:center}
 .final-cta h2{font-size:34px}
-.final-cta p{color:var(--ink-soft);margin:14px auto 30px;max-width:560px}
+.final-cta p{color:var(--ink-soft);margin:14px auto 30px;white-space:nowrap}
 footer{border-top:1px solid var(--line);padding:36px 0;background:var(--card)}
 .foot-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;font-size:13.5px;color:var(--ink-faint)}
 .foot-inner a{color:var(--ink-faint)}
@@ -150,6 +158,8 @@ footer{border-top:1px solid var(--line);padding:36px 0;background:var(--card)}
   .shot-grid{grid-template-columns:1fr}
   .section{padding:60px 0}
   .section h2{font-size:26px}
+  .manifesto h2{font-size:24px}
+  .final-cta p{white-space:normal;max-width:560px}
   .nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:var(--card);flex-direction:column;align-items:flex-start;gap:0;padding:8px 0;border-bottom:1px solid var(--line)}
   .nav-links.open{display:flex}
   .nav-links a{padding:13px 24px;width:100%}
@@ -167,6 +177,7 @@ footer{border-top:1px solid var(--line);padding:36px 0;background:var(--card)}
       期货盘感练习丨未来可期工作室出品
     </a>
     <nav class="nav-links" id="navLinks">
+      <a href="#about">开发理念</a>
       <a href="#features">功能</a>
       <a href="#how">使用流程</a>
       <a href="#screens">软件截图</a>
@@ -202,11 +213,28 @@ footer{border-top:1px solid var(--line);padding:36px 0;background:var(--card)}
     </div>
   </div>
 </section>
+
+<section class="section manifesto" id="about">
+  <div class="wrap">
+    <div class="eyebrow">关于这款软件</div>
+    <h2>写给可能和我一样的人</h2>
+    <div class="box">
+      <div class="lead">
+        <p>市面上的盘感练习工具，功能都很全：手数自己定、K 线能缩放、分时图一直走、指标层层叠。功能全当然好——可我练着练着发现，那不是我想要的练法。我喜欢更简单的东西。</p>
+        <p>我做期货，做的是中线。不看每天的分时，不纠结当天那几根针，我关心的是：一段趋势里，该不该进场、该不该拿住。所以我想要的，就是一根最纯的 K 线，把节奏还给我。</p>
+        <p>于是就有了这个软件：没有一堆参数要你调，没有指标叠成花，只有真实的日线行情，一根一根往后推。做多、做空、还是观望，全靠我自己对走势的判断。仅此而已。</p>
+        <p>如果你也做中线，也想要这种简单纯粹的练法——这个软件，可能就是为你做的。</p>
+      </div>
+      <div class="sign">期货盘感练习 · 未来可期工作室</div>
+    </div>
+  </div>
+</section>
+
 <section class="section features" id="features">
   <div class="wrap">
     <div class="eyebrow">软件功能</div>
     <h2>为「反复练」设计的训练工具</h2>
-    <p class="lead">不是行情软件，也不接实盘。它只做一件事：把真实发生过的行情变成一套可以反复作答的识图题。</p>
+    <p class="lead">不是行情软件，也不接实盘。它只做一件事：把真实行情变成一套反复作答的识图题。</p>
     <div class="feature-grid">
       <div class="feature">
         <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/><path d="M7 4v3M12 9v3M17 14v3"/></svg></div>
@@ -291,11 +319,11 @@ footer{border-top:1px solid var(--line);padding:36px 0;background:var(--card)}
 <section class="section" id="video">
   <div class="wrap">
     <div class="eyebrow">演示视频</div>
-    <h2>看一段完整操作演示</h2>
+    <h2>看一段产品介绍</h2>
     <div class="video-box">
       <div class="video-frame">
         <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="none" stroke="#5a6068" stroke-width="1.2"/><path d="M10 8l6 4-6 4z"/></svg>
-        <p>软件操作演示视频录制中</p>
+        <p>产品介绍视频录制中</p>
         <small>视频上线后将在此处直接播放</small>
       </div>
       <!-- 视频上传 B 站后：删除上方 .video-frame 整块，替换为下面这行，并把 BV 号换成你的视频 BV 号
