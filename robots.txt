@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mokingback.github.io/futures-trainer-site/sitemap.xml
+Sitemap: https://futureke7.cn/sitemap.xml
